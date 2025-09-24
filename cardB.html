@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        min-height: 685px;
+        background: #3f5efb;
+        background: radial-gradient(
+          circle,
+          rgba(63, 94, 251, 1) 0%,
+          rgba(212, 159, 168, 1) 73%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 400px;
+        height: 530px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* flex direction column hai islie horizontal ka kaam alugn items smbhal rha hai*/
+        gap: 25px;
+      }
+      .card img {
+        width: 100%;
+        height: 30%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .textBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 75%;
+        text-align: center;
+      }
+      .amountBox{
+        width: 80%;
+        height: 10%;
+        background-color: peachpuff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      #leftBox{
+        height: 100%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      #logoBox img{
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+      #button{
+        width: 80%;
+        height: 9%;
+        background-color: #3f5efb;
+        color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      }
+      .cancelBox a{
+        text-decoration: none;
+        color: rgb(45, 43, 43);
+        font-weight: bold;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/019/653/490/original/hi-tech-digital-circuit-board-ai-pad-and-electrical-lines-connected-on-blue-lighting-background-futuristic-technology-design-element-concept-vector.jpg"
+        />
+        <div class="textBox">
+            <h2>ORDER SUMMARY</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+            temporibus tenetur accusamus quia voluptatem nisi voluptate
+            voluptatibus illum assumend!
+            </p>
+        </div>
+        <div class="amountBox">
+            <div id="leftBox">
+                <div id="logoBox">
+                    <img src="https://www.freepnglogos.com/uploads/apple-music-logo-circle-png-28.png" >
+                </div>
+                <div id="textAmountBox">
+                    <p>Amount</p>
+                    <p>$99.9/year</p>
+                </div>
+            </div>
+            <div id="rightBox">
+                <a href="#">Change</a>
+            </div>
+        </div>
+        <button id="button">
+            Proceed to Payment.
+        </button>
+        <div class="cancelBox">
+            <a href="#">Cancel Order</a>    
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
