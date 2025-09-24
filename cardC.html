@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            min-height: 710px;
+            background-color: rgb(32, 0, 37);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 800px;
+            height: 400px;
+            background-color: rgba(98, 5, 127, 0.837);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: 4px solid black;
+            border-radius: 15px;
+            box-shadow: 1.3rem 1.3rem 20px rgb(52, 49, 49);
+        }
+        .leftBox{
+            width: 50%;
+            height: 100%;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 55px;
+            padding: 20px;
+        }
+        .rightBox{
+            width: 50%;
+            height: 100%;
+        }
+        .rightBox img{
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+        }
+        .leftBox #headingBox h1{
+            color:white ;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .leftBox #paraBox p{
+            color:white ;
+            text-align: center;
+        }
+        #statBox{
+            display: flex;
+            gap: 60px;
+            
+            /* justify-content: space-between; */
+        }
+        #comments h2,p{
+            color: white;
+            text-align: center;
+        }
+        #users h2,p{
+            color: white;
+            text-align: center;
+        }
+        #views h2,p{
+            color: white;
+            text-align: center;
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftBox">
+                <div id="headingBox">
+                    <h1>Get insights that help your business grow.</h1>
+                </div>
+                <div id="paraBox">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ratione libero asperiores excepturi a quos blanditiis natus architecto quae dolorum.</p>
+                </div>
+                <div id="statBox">
+                    <div id="comments">
+                        <h2>10K+</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div id="users">
+                            <h2>214</h2>
+                            <p>Paid Users</p>
+                    </div>
+                    <div id="views">
+                            <h2>12M+</h2>
+                            <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/019/653/490/original/hi-tech-digital-circuit-board-ai-pad-and-electrical-lines-connected-on-blue-lighting-background-futuristic-technology-design-element-concept-vector.jpg"
+                />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
